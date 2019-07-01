@@ -1,0 +1,65 @@
+﻿.validation-form {
+    background: #fff;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: none !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.vali-form {
+    padding: 1.5em 0;
+}
+
+
+.form-group1 input[type="text"], .form-group1 textarea,
+.form-group1 input[type="password"], .form-group1 input[type="date"] {
+    border: 1px solid #E9E9E9;
+    width: 100%;
+    outline: none;
+    padding: 0.5em 1em;
+    color: #999;
+    margin-top: 0.5em;
+    font-family: 'Muli-Regular';
+}
+
+.form-group1 textarea {
+    min-height: 100px;
+}
+
+.form-group2 select {
+    width: 100%;
+    border: 1px solid #E9E9E9;
+    width: 100%;
+    outline: none;
+    padding: 0.5em 1em;
+    color: #999;
+    margin-top: 0.5em;
+    font-family: 'Muli-Regular';
+}
+
+.form-group {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.form-inline .form-group {
+    margin-bottom: 8px;
+}
+
+.ddlstyle {
+    width: 100%;
+    border: 1px solid #E9E9E9;
+    font-size: 0.9em;
+    width: 100%;
+    outline: none;
+    padding: 0.5em 1em;
+    color: #999;
+    margin-top: 0.5em;
+    font-family: 'Muli-Regular';
+}

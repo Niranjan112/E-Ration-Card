@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>E-Ration Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="shortcut icon" href="assets/images/logo_sm.png" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/CustomStyleSheet.css" rel="stylesheet" type="text/css" />
+    <%--<script src="js/jquery.min.js"></script>--%>
+    <script src="assets/js/jquery.min.js"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fixed-left widescreen">
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <div class="topbar">
+                <div class="topbar-left">
+                    <div class="text-center" style="font-size: 36px;color: darkgreen;margin-top: 6px;">
+                        E Ration Card
+                    </div>
+                </div>
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="">
+                            <%--<div class="pull-left">
+                                <button type="button" class="button-menu-mobile open-left waves-effect waves-light"><i class="ion-navicon"></i></button>
+                                <span class="clearfix"></span>
+                            </div>--%>
+
+
+                            <ul class="nav navbar-nav navbar-right pull-right">
+                                <li class="dropdown"><a href="#" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true"></a>
+                                    <ul class="dropdown-menu">
+
+                                        <li class="divider"></li>
+                                        <li><a onclick="var retvalue = Logout(); event.returnValue= retvalue;">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left side-menu">
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 90px;">
+                    <div class="sidebar-inner slimscrollleft" style="overflow: hidden; width: auto; height: 90px;">
+                        <div id="sidebar-menu">
+                            <ul>
+                                <li><a href="Dashboard.aspx" class="waves-effect"><i class="ti-home"></i><span>Dashboard </span></a></li>
+                                <li><a href="MemberList.aspx" class="waves-effect"><i class="ti-agenda"></i><span>Member Details </span></a></li>
+                                <li><a href="ItemList.aspx" class="waves-effect"><i class="ti-agenda"></i><span>Item Details </span></a></li>
+                                <li><a href="OrderItem.aspx" class="waves-effect"><i class="ti-agenda"></i><span>Order Item </span></a></li>
+                                <li><a href="OrderDetails.aspx" class="waves-effect"><i class="ti-agenda"></i><span>Order Details </span></a></li>
+                                <li><a href="Login.aspx" class="waves-effect"><i class="fa fa-sign-out"></i><span>Logout </span></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="slimScrollBar" style="background: rgb(122, 134, 143); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 55.361px; visibility: visible;"></div>
+                    <div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+                </div>
+            </div>
+            <div class="content-page">
+                <div class="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <footer class="footer">2017 © E Ration Card. </footer>
+            </div>
+        </div>
+        
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    </form>
+</body>
+</html>
